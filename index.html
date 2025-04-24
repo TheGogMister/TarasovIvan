@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Портфолио</title>
+	<!-- Подключаем Font Awesome для иконок -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.oval-icons-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			margin: 20px 0;
+		}
+
+		.oval-icon {
+			width: 80px;
+			height: 50px;
+			background-color: #4285F4;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 14px;
+			text-align: center;
+			padding: 5px;
+			box-sizing: border-box;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+			.oval-icon:hover {
+				transform: scale(1.05);
+				background-color: #3367D6;
+			}
+
+		.photo {
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		.contacts {
+			margin-bottom: 20px;
+		}
+
+		.contact-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			margin-bottom: 10px;
+			color: #4285F4;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+			.contact-link:hover {
+				color: #3367D6;
+			}
+
+			.contact-link i {
+				font-size: 20px;
+			}
+
+		button {
+			padding: 10px 20px;
+			background-color: #4285F4;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+			button:hover {
+				background-color: #3367D6;
+			}
+	</style>
+</head>
+
+<body class="container">
+	<p>QA Engineer</p>
+	<h1>Тарасов Иван</h1>
+
+	<div class="item">
+		<img class="photo" src="me.jpg" width="250" height="250" alt="фото">
+	</div>
+
+	<h2>Обо мне</h2>
+	<p>Привет! Я занимаюсь тестированием, буду рад тестировать ваш продукт.</p>
+
+	<h2>Навыки</h2>
+	<div class="oval-icons-container">
+		<div class="oval-icon">Manual Testing</div>
+		<div class="oval-icon">Test Cases</div>
+		<div class="oval-icon">Bug Reports</div>
+		<div class="oval-icon">SQL</div>
+		<div class="oval-icon">Postman</div>
+		<div class="oval-icon">JIRA</div>
+		<div class="oval-icon">Git</div>
+		<div class="oval-icon">API Testing</div>
+		<div class="oval-icon">TestRail</div>
+	</div>
+
+	<h2>Контакты</h2>
+	<div class="contacts">
+		<a href="https://t.me/thegogmister" class="contact-link">
+			<i class="fab fa-telegram"></i> Telegram
+		</a>
+		<br>
+		<a href="mailto:ivantarasov1950.100500@gmail.com" class="contact-link">
+			<i class="fas fa-envelope"></i> Email
+		</a>
+		<br>
+		<p class="contact-link">
+			<i class="fas fa-phone"></i> +79774847914
+		</p>
+	</div>
+
+	
+</body>
+</html>
